@@ -1,11 +1,12 @@
+import DateComponent from './DatePicker';
+import Alert2 from './Alert2';
+
 function App() {
   return (
     <>
-    <DateComponent></DateComponent>
     <div className="App">
-      <p className="bg-tahiti-500 text-white">???!</p>
+    <DateComponent></DateComponent>
       <><Alert2></Alert2></>
-      <p className="bg-red-500 text-white">Hello Vite + React + Tailwind CSS!</p>
     </div>
     </>
   )

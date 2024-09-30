@@ -13,6 +13,58 @@ dayjs.locale('zh-hk');
 
 const theme = createTheme({
     components: {
+        MuiOutlinedInput: {
+            styleOverrides: {
+                root: {
+                    borderWidth: '2px',
+                    borderColor: '#E7E7E7', // neutral-200 color
+                    '&.Mui-focused': {
+                        borderColor: '#ffffff', // brand-300 color on focus
+                        outline: 'none', // Remove outline
+                    },
+                    '&:hover': {
+                        borderColor: '#ffffff', // brand-400 color (change on hover)
+                        outline: 'none'
+                    },
+                    '&:focus': {
+                        borderColor: '#ffffff', // brand-400 color (change on hover)
+                        outline: 'none'
+                    },
+                },
+            },
+        },
+        MuiInputLabel: {
+            styleOverrides: {
+                root: {
+                    color: '#3D3D3D', // Neutral color for label
+                    '&.Mui-focused': {
+                        color: '#EF6F25', // Change color when focused
+                         outline: 'none'
+                    },
+                    '&:hover': {
+                        borderColor: '#ffffff', // brand-400 color (change on hover)
+                         outline: 'none'
+                    },
+                    '&:focus': {
+                        borderColor: '#ffffff', // brand-400 color (change on hover)
+                         outline: 'none'
+                    },
+                },
+            },
+        },
+        MuiFormHelperText: {
+            styleOverrides: {
+                root: {
+                    color: '#ffffff', // Neutral color for helper text
+                    '&:hover': {
+                        borderColor: '#ffffff', // brand-400 color (change on hover)
+                    },
+                    '&:focus': {
+                        borderColor: '#ffffff', // brand-400 color (change on hover)
+                    },
+                },
+            },
+        },
         MuiDialogActions: {
             styleOverrides: {
                 root: {
@@ -65,7 +117,7 @@ export default function DateComponent() {
                 }
             >
                 <div>
-                    <DatePicker
+                    <DatePicker className='bg-neutral-50 rounded-lg'
                         value={selectedDate}
                         onChange={(date) => {
                             setSelectedDate(date);

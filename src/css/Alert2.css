@@ -5,6 +5,11 @@
     margin-right: 8px;
 }
 
+.swal2-cancel.swal2-styled:hover{
+    background-color: theme("colors.neutral.100") !important;
+    outline: 0px;
+}
+
 .swal2-confirm.swal2-styled{
     background-color: theme("colors.brand.500");
     margin-left: 8px;

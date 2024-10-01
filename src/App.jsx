@@ -2,6 +2,7 @@ import DateComponent from './DatePicker';
 import Alert2 from './Alert2';
 import Select from './Select';
 import Modal1 from './Modal1';
+import NavTabs from './NavTabs';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <><Alert2></Alert2></>
       <Select></Select>
       <Modal1></Modal1>
+      <NavTabs></NavTabs>
     </div>
     </>
   )

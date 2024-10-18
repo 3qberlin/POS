@@ -1,3 +1,57 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@font-face {
+    font-family: 'Noto Sans TC';
+    src: url('src/fonts/NotoSansTC-VariableFont_wght.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@layer base {
+    h1 {
+        @apply text-48
+    }
+
+    h2 {
+        @apply text-40
+    }
+
+    h3 {
+        @apply text-32
+    }
+
+    h4 {
+        @apply text-28 tracking-1
+    }
+
+    h5 {
+        @apply text-24 tracking-1
+    }
+
+    h6 {
+        @apply text-20 tracking-1
+    }
+}
+
+@layer components {
+    .btn-brand {
+        @apply px-16 py-8 bg-brand-500 rounded-8 text-neutral-0 hover:bg-brand-400 active:bg-brand-600;
+    }
+
+    .btn-success{
+        @apply rounded-8 py-4 px-8 text-14 text-center;
+        box-shadow: 0 0 6px theme(colors.positive.100)
+    }
+
+    .btn-negative{
+        @apply rounded-8 py-4 px-8 text-14 text-center;
+        box-shadow: 0 0 6px theme(colors.negative.100)
+    }
+
+    .email{
+        @apply bg-brand-100 rounded-8 px-16 py-12 text-brand-300
+    }
+}

@@ -21,13 +21,17 @@ const theme = createTheme({
                         color: '#EF6F25',
                         outline: 'none'
                     },
-                    '&:hover': {
-                        borderColor: '#ffffff',
-                        outline: 'none'
+                },
+            },
+        },
+        MuiOutlinedInput: {
+            styleOverrides: {
+                root: {
+                    '&:hover .MuiOutlinedInput-notchedOutline': {
+                        borderColor: '#EF6F25', // 替換為你的品牌色號 (brand-400)
                     },
-                    '&:focus': {
-                        borderColor: '#ffffff',
-                        outline: 'none'
+                    '&.Mui-focused .MuiOutlinedInput-notchedOutline': {
+                        borderColor: '#EF6F25', // 聚焦時的顏色
                     },
                 },
             },
@@ -36,12 +40,6 @@ const theme = createTheme({
             styleOverrides: {
                 root: {
                     color: '#ffffff',
-                    '&:hover': {
-                        borderColor: '#ffffff',
-                    },
-                    '&:focus': {
-                        borderColor: '#ffffff',
-                    },
                 },
             },
         },
@@ -101,7 +99,7 @@ export default function DateComponent() {
                         <p>用餐日期</p>
                         {dayOfWeek}
                     </div>
-                    <DatePicker className='bg-neutral-50 rounded-12 w-full'
+                    <DatePicker className='bg-neutral-50 rounded-12 w-full hover:border-brand-400'
                         value={selectedDate}
                         onChange={(date) => {
                             setSelectedDate(date);

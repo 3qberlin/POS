@@ -21,3 +21,7 @@
     background-color: #EF6F25 !important;
     color: #F6F6F6;
 }
+
+.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: #EF6F25 !important;
+}

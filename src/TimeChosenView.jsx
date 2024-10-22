@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import Notification1 from './Notification1View';
 import Notification2 from './Notification2View';
+import { basePath } from './basePathView';
 
 export default function TimeChosen() {
     const [isNotification1Open, setIsNotification1Open] = useState(false);
     const [isNotification2Open, setIsNotification2Open] = useState(false);
-
 
     return (
         <>
@@ -13,22 +13,22 @@ export default function TimeChosen() {
                 <div className="basis-0 lg:basis-2/12"></div>
                 <ul className="basis-full lg:basis-8/12 flex flex-wrap lg:flex-nowrap lg:gap-40">
                     <li className='basis-full lg:basis-1/4 flex flex-wrap'>
-                        <img src="/restaurant/Restaurant-Pofile-Image.png" alt="RestaurantPic" className='lg:rounded-8 object-cover' />
+                        <img src={`${basePath}/restaurant/Restaurant-Pofile-Image.png`} alt="RestaurantPic" className='lg:rounded-8 object-cover' />
                         <ul className='flex flex-col px-16 lg:px-0'>
                             <li className='flex items-center mt-20 w-full'>
-                                <img src="/icons/Restaurant.png" alt="Restaurant" width={24} height={24} />
+                                <img src={`${basePath}/icons/Restaurant.png`} alt="Restaurant" width={24} height={24} />
                                 <p className='text-16 lg:text-20 ml-8 lg:ml-12'>美好食光</p>
                             </li>
                             <li className='flex items-center mt-20 w-full'>
-                                <img src="/icons/Calendar.png" alt="Calendar" width={24} height={24} />
+                                <img src={`${basePath}/icons/Calendar.png`} alt="Calendar" width={24} height={24} />
                                 <p className='text-16 lg:text-20 ml-8 lg:ml-12'>2024-12-12</p>
                             </li>
                             <li className='flex items-center mt-20 w-full'>
-                                <img src="/icons/Time.png" alt="Time" width={24} height={24} />
+                                <img src={`${basePath}/icons/Time.png`} alt="Time" width={24} height={24} />
                                 <p className='text-16 lg:text-20 ml-8 lg:ml-12'>17：30</p>
                             </li>
                             <li className='flex items-center mt-12 lg:mt-20 w-full'>
-                                <img src="/icons/Person.png" alt="Time" width={24} height={24} className='text-neutral-800' />
+                                <img src={`${basePath}/icons/Person.png`} alt="Time" width={24} height={24} className='text-neutral-800' />
                                 <p className='text-16 lg:text-20 ml-8 lg:ml-12'>8</p>
                             </li>
                         </ul>

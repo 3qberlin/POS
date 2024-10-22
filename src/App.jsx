@@ -6,11 +6,10 @@ import Footer from './FooterView';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import TimeChosen from './TimeChosenView';
 import ScrollToTop from './ScrollToTopView';
-import './css/Date.css';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={'/POS/'}>
       <Header />
       <ScrollToTop></ScrollToTop>
       <Routes>

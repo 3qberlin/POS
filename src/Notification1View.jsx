@@ -21,7 +21,7 @@ export default function Notification1({ open, setOpen }) {
                         <div className="bg-neutral-0 p-24 sm:p-24 sm:pb-12">
                             <div className="sm:flex sm:items-start">
                                 <div className="flex flex-shrink-0 items-center justify-center">
-                                    <img src="src/assets/icons/Warning.png" alt="Warning" width={40} height={40} />
+                                    <img src="/icons/Warning.png" alt="Warning" width={40} height={40} />
                                 </div>
                                 <div className="mt-12 sm:ml-12 sm:mt-0 text-left">
                                     <DialogTitle as="h3" className="text-24 font-semibold text-neutral-900 h-40 flex justify-center sm:justify-start items-center">

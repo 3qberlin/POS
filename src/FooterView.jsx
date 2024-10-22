@@ -4,7 +4,7 @@ export default function Footer() {
             <ul className="container mx-auto px-16 md:px-0 flex flex-wrap lg:flex-nowrap justify-center lg:justify-between pt-24 pb-16 gap-20 items-center">
                 <li>
                     <a href="#" className="flex gap-8">
-                        <img src="src/assets/icons/Logo.png" alt="Logo" width={24} height={24} />
+                        <img src="/icons/Logo.png" alt="Logo" width={24} height={24} />
                         <p className="my-auto">美好食光 | 訂位系統</p>
                     </a>
                 </li>

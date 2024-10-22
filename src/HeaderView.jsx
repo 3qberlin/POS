@@ -7,21 +7,21 @@ export default function Header() {
                 <h1 className="absolute left-n">美好食光 | 訂位系統</h1>
                 <div className="flex items-center">
                     <a href="#" className="flex items-center">
-                        <img src="src/assets/icons/Logo.png" alt="Logo" width={32} height={32} className="hidden lg:flex" />
+                        <img src="/icons/Logo.png" alt="Logo" width={32} height={32} className="hidden lg:flex" />
                         <span className="text-24 ml-12 hidden lg:flex">美好食光 | 訂位系統</span>
                     </a>
                     <a href="#" className="flex items-center">
-                        <img src="src/assets/icons/Logo.png" alt="Logo" width={24} height={24} className="flex lg:hidden" />
+                        <img src="/icons/Logo.png" alt="Logo" width={24} height={24} className="flex lg:hidden" />
                         <span className="text-20 ml-8 flex lg:hidden">美好食光</span>
                     </a>
 
                 </div>
                 <a href="#" className="flex items-center ms-auto">
 
-                    <button type="button" className="btn-brand flex"><img src="src/assets/icons/Person_white.png" alt="member" width={20} height={24} className="me-8" />會員</button>
+                    <button type="button" className="btn-brand flex"><img src="/icons/Person_White.png" alt="member" width={20} height={24} className="me-8" />會員</button>
                 </a>
                 <a href="#" className="flex items-center">
-                <Logout></Logout>
+                    <Logout></Logout>
                 </a>
             </div>
         </div >

@@ -13,22 +13,22 @@ export default function TimeChosen() {
                 <div className="basis-0 lg:basis-2/12"></div>
                 <ul className="basis-full lg:basis-8/12 flex flex-wrap lg:flex-nowrap lg:gap-40">
                     <li className='basis-full lg:basis-1/4 flex flex-wrap'>
-                        <img src="src/assets/restaurant/Restaurant-Pofile-Image.png" alt="RestaurantPic" className='lg:rounded-8 object-cover' />
+                        <img src="/restaurant/Restaurant-Pofile-Image.png" alt="RestaurantPic" className='lg:rounded-8 object-cover' />
                         <ul className='flex flex-col px-16 lg:px-0'>
                             <li className='flex items-center mt-20 w-full'>
-                                <img src="src/assets/icons/Restaurant.png" alt="Restaurant" width={24} height={24} />
+                                <img src="/icons/Restaurant.png" alt="Restaurant" width={24} height={24} />
                                 <p className='text-16 lg:text-20 ml-8 lg:ml-12'>美好食光</p>
                             </li>
                             <li className='flex items-center mt-20 w-full'>
-                                <img src="src/assets/icons/Calendar.png" alt="Calendar" width={24} height={24} />
+                                <img src="/icons/Calendar.png" alt="Calendar" width={24} height={24} />
                                 <p className='text-16 lg:text-20 ml-8 lg:ml-12'>2024-12-12</p>
                             </li>
                             <li className='flex items-center mt-20 w-full'>
-                                <img src="src/assets/icons/Time.png" alt="Time" width={24} height={24} />
+                                <img src="/icons/Time.png" alt="Time" width={24} height={24} />
                                 <p className='text-16 lg:text-20 ml-8 lg:ml-12'>17：30</p>
                             </li>
                             <li className='flex items-center mt-12 lg:mt-20 w-full'>
-                                <img src="src/assets/icons/Person.png" alt="Time" width={24} height={24} className='text-neutral-800' />
+                                <img src="/icons/Person.png" alt="Time" width={24} height={24} className='text-neutral-800' />
                                 <p className='text-16 lg:text-20 ml-8 lg:ml-12'>8</p>
                             </li>
                         </ul>

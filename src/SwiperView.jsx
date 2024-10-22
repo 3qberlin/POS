@@ -1,4 +1,5 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Link } from 'react-router-dom';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -10,7 +11,7 @@ import { Navigation } from 'swiper/modules';
 export default function SwiperSection() {
     return (
         <>
-            <div className="container mx-auto px-16 md:px-0 mt-60 md:mt-80">
+            <div className="container mx-auto px-16 md:px-0 my-60 md:mt-80">
                 <p className='mb-8'>選擇時段</p>
                 <div className=" bg-neutral-0 shadow-md rounded-8">
 
@@ -35,7 +36,9 @@ export default function SwiperSection() {
                             <div className="flex flex-wrap w-full justify-center text-neutral-50">
                                 <p className='text-20 font-semibold w-full text-neutral-800 px-16 pt-32'>早</p>
                                 <div className="container flex flex-wrap p-40 md:px-16 gap-24 justify-center text-nowrap">
-                                    <button type="button" className='btn-brand'>09：30</button>
+                                    <Link to='/TimeChosen'>
+                                        <button type="button" className='btn-brand'>Target</button>
+                                    </Link>
                                     <button type="button" className='btn-brand'>09：30</button>
                                     <button type="button" className='btn-brand'>09：30</button>
                                     <button type="button" className='btn-brand'>09：30</button>

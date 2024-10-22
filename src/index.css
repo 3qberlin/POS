@@ -41,17 +41,21 @@
         @apply px-16 py-8 bg-brand-500 rounded-8 text-neutral-0 hover:bg-brand-400 active:bg-brand-600;
     }
 
-    .btn-success{
+    .btn-success {
         @apply rounded-8 py-4 px-8 text-14 text-center;
         box-shadow: 0 0 6px theme(colors.positive.100)
     }
 
-    .btn-negative{
+    .btn-negative {
         @apply rounded-8 py-4 px-8 text-14 text-center;
         box-shadow: 0 0 6px theme(colors.negative.100)
     }
 
-    .email{
+    .email {
         @apply bg-brand-100 rounded-8 px-16 py-12 text-brand-300
     }
+}
+
+* {
+    color: theme(colors.neutral.800);
 }

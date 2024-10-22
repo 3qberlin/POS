@@ -76,6 +76,9 @@ export const theme = {
       '60': '60px',
       '72': '72px',
       '80': '80px',
+      '100': '100px',
+      '140': '140px',
+      '280': '280px',
       'n': '-1000px'
     },
     borderRadius: {
@@ -111,6 +114,10 @@ export const theme = {
   fontFamily: {
     sans: ['SF Pro', 'system-ui', 'sans-serif'],
   },
+  lineHeight: {
+    'smallMedium': '1.8rem',
+    'medium': '2rem',
+  },
   screens: {
     'sm': '375px',
     'md': '667px',
@@ -124,6 +131,7 @@ export const theme = {
     '20': '20px',
     '24': '24px',
     '32': '32px',
+    '40': '40px',
   }
 };
 export const plugins = [];

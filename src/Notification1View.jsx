@@ -1,11 +1,9 @@
 'use client'
 
-import { useState } from 'react'
 import { Dialog, DialogBackdrop, DialogPanel, DialogTitle } from '@headlessui/react'
-import { ExclamationTriangleIcon } from '@heroicons/react/24/outline'
 
-export default function Notification1() {
-    const [open, setOpen] = useState(true)
+// eslint-disable-next-line react/prop-types
+export default function Notification1({ open, setOpen }) {
 
     return (
         <Dialog open={open} onClose={setOpen} className="relative z-10">
@@ -22,8 +20,8 @@ export default function Notification1() {
                     >
                         <div className="bg-neutral-0 p-24 sm:p-24 sm:pb-12">
                             <div className="sm:flex sm:items-start">
-                                <div className="mx-auto flex h-40 w-40 flex-shrink-0 items-center justify-center rounded-full p-8 bg-brand-100">
-                                    <ExclamationTriangleIcon aria-hidden="true" className="h-40 w-40 text-brand-500" />
+                                <div className="flex flex-shrink-0 items-center justify-center">
+                                    <img src="src/assets/icons/Warning.png" alt="Warning" width={40} height={40} />
                                 </div>
                                 <div className="mt-12 sm:ml-12 sm:mt-0 text-left">
                                     <DialogTitle as="h3" className="text-24 font-semibold text-neutral-900 h-40 flex justify-center sm:justify-start items-center">
@@ -33,19 +31,19 @@ export default function Notification1() {
 
                                         <li className=" text-neutral-800">
                                             <span className='text-18'>人數安排</span>
-                                            <p className=''>用餐當日到店人數逾訂位時數量，將可能採取非同桌或僅待接訂位數量人數入座</p>
+                                            <p>用餐當日到店人數逾訂位時數量，將可能採取非同桌或僅待接訂位數量人數入座</p>
                                         </li>
                                         <li className=" text-neutral-800 mt-16">
                                             <span className='text-18'>座位安排</span>
-                                            <p className=''>依店家安排，僅保留 10 分鐘</p>
+                                            <p>依店家安排，僅保留 10 分鐘</p>
                                         </li>
                                         <li className=" text-neutral-800 mt-16">
                                             <span className='text-18'>付款條件</span>
-                                            <p className=''>現金、信用卡（不含 AE 卡）與行動支付</p>
+                                            <p>現金、信用卡（不含 AE 卡）與行動支付</p>
                                         </li>
                                         <li className=" text-neutral-800 mt-16">
                                             <span className='text-18'>備註需求</span>
-                                            <p className=''>店家依現場設施與人力情況，協助完成備註需求</p>
+                                            <p>店家依現場設施與人力情況，協助完成備註需求</p>
                                         </li>
                                         <li className=" text-neutral-800 text-18 mt-16">
                                             店家擁有座位使用解釋權

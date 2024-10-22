@@ -18,7 +18,7 @@ export default function Header() {
                 </div>
                 <a href="#" className="flex items-center ms-auto">
 
-                    <button className="btn-brand flex"><img src="src/assets/icons/Person.png" alt="member" width={20} height={24} className="me-8" />會員</button>
+                    <button type="button" className="btn-brand flex"><img src="src/assets/icons/Person_white.png" alt="member" width={20} height={24} className="me-8" />會員</button>
                 </a>
                 <a href="#" className="flex items-center">
                 <Logout></Logout>

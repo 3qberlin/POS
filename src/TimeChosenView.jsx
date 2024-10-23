@@ -9,9 +9,8 @@ export default function TimeChosen() {
 
     return (
         <>
-            <div className='container mx-auto flex flex-wrap xl:flex-nowrap lg:gap-24 lg:mt-100'>
-                <div className="basis-0 lg:basis-2/12"></div>
-                <ul className="basis-full lg:basis-8/12 flex flex-wrap lg:flex-nowrap lg:gap-40">
+            <div className='container mx-auto flex flex-wrap xl:flex-nowrap lg:mt-100'>
+                <ul className="basis-full lg:basis-8/12 flex flex-wrap lg:flex-nowrap gap-40 mx-auto">
                     <li className='basis-full lg:basis-1/4 flex flex-wrap'>
                         <img src={`${basePath}/restaurant/Restaurant-Pofile-Image.png`} alt="RestaurantPic" className='lg:rounded-8 object-cover' />
                         <ul className='flex flex-col px-16 lg:px-0'>
@@ -47,12 +46,9 @@ export default function TimeChosen() {
                             <textarea name="" id="orderComment" className='rounded-8 min-h-140 px-8 py-4 bg-neutral-50 hover:border-brand-400 border-1 focus:outline-none border border-1 border-neutral-200 focus:ring-brand-500 focus:ring-1 w-full' placeholder='備註內容'></textarea>
                         </div>
                     </li>
-
                 </ul>
-                <div className="basis-0 lg:basis-2/12"></div>
-                {/* <Link to="/">首頁</Link> */}
             </div>
-            <div className="container mx-auto flex px-16 mt-20 flex-wrap justify-center mb-40 lg:mb-280">
+            <div className="container mx-auto flex px-16 lg:px-0 mt-20 flex-wrap justify-center mb-40 lg:mb-280">
                 <div className="basis-0 lg:basis-2/12"></div>
                 <div className="basis-full lg:basis-8/12">
 

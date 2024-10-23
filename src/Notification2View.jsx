@@ -70,7 +70,7 @@ export default function Notification2({ open, setOpen }) {
                             <button
                                 type="button"
                                 onClick={() => setOpen(false)}
-                                className="inline-flex w-full justify-center text-16 rounded-8 bg-brand-500 px-16 py-8  text-neutral-0 shadow-sm hover:bg-nagitave sm:w-auto"
+                                className="w-full justify-center text-16 rounded-8 bg-brand-500 px-16 py-8  text-neutral-0 shadow-sm hover:bg-nagitave md:w-auto"
                             >
                                 我已瞭解
                             </button>

@@ -105,7 +105,7 @@ export default function DateComponent() {
                             setSelectedDate(date);
                         }}
                         shouldDisableDate={shouldDisableDate}
-                        renderInput={(params) => <TextField {...params} />}
+                        slotProps={{ textField: { fullWidth: true } }}
                     />
                 </div>
             </LocalizationProvider>

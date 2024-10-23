@@ -48,7 +48,7 @@ export default function TimeChosen() {
                     </li>
                 </ul>
             </div>
-            <div className="container mx-auto flex px-16 lg:px-0 mt-20 flex-wrap justify-center mb-40 lg:mb-280">
+            <div className="container mx-auto flex px-16 lg:px-0 mt-20 flex-wrap justify-center mb-40 lg:mb-240">
                 <div className="basis-0 lg:basis-2/12"></div>
                 <div className="basis-full lg:basis-8/12">
 

@@ -2,7 +2,7 @@ import { basePath } from "./basePathView"
 
 export default function Footer() {
     return (
-        <div className="bg-neutral-0 lg:mt-100 text-16 lg:text-20">
+        <div className="bg-neutral-0 text-16 lg:text-20">
             <ul className="container mx-auto px-16 md:px-0 flex flex-wrap lg:flex-nowrap justify-center lg:justify-between pt-24 pb-16 gap-20 items-center">
                 <li>
                     <a href="#" className="flex gap-8">

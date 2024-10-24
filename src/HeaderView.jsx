@@ -1,5 +1,6 @@
 import Logout from "./LogoutView"
 import { basePath } from './basePathView';
+import { Link } from "react-router-dom";
 
 export default function Header() {
     return (
@@ -18,7 +19,9 @@ export default function Header() {
 
                 </div>
                 <a href="#" className="flex items-center ms-auto">
-                    <button type="button" className="btn-brand flex"><img src={`${basePath}/icons/Person_White.png`} alt="member" width={20} height={24} className="me-8" />會員</button>
+                    <Link to="/LoginRegister">
+                        <button type="button" className="btn-brand flex"><img src={`${basePath}/icons/Person_White.png`} alt="member" width={20} height={24} className="me-8" />會員</button>
+                    </Link>
                 </a>
                 <a href="#" className="flex items-center">
                     <Logout></Logout>

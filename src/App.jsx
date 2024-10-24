@@ -1,10 +1,12 @@
 import Header from './HeaderView';
+import Footer from './FooterView';
 import RestaurantInfo from './RestaurantInfoView';
 import Condition from './ConditionView';
 import SwiperSection from './SwiperView';
-import Footer from './FooterView';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import TimeChosen from './TimeChosenView';
+import LoginRegister from './LoginRegisterView';
+
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ScrollToTop from './ScrollToTopView';
 
 function App() {
@@ -26,6 +28,7 @@ function App() {
         />
         {/* TimeChosen Page */}
         <Route path="/TimeChosen" element={<TimeChosen />} />
+        <Route path="/LoginRegister" element={<LoginRegister />} />
       </Routes>
       <Footer />
     </BrowserRouter>

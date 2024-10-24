@@ -25,3 +25,7 @@
 .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
     border-color: #EF6F25 !important;
 }
+
+.MuiInputBase-input {
+    height: 15px !important;
+}

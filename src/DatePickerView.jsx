@@ -6,7 +6,6 @@ import { DatePicker } from '@mui/x-date-pickers/DatePicker';
 import { zhHK } from "@mui/x-date-pickers/locales";
 import 'dayjs/locale/zh-hk';
 import dayjs from 'dayjs';
-import { TextField } from '@mui/material';
 import './css/Date.css';
 
 dayjs.locale('zh-hk');
@@ -95,7 +94,7 @@ export default function DateComponent() {
                 }
             >
                 <div className='flex flex-wrap w-full'>
-                    <div className='flex gap-12 w-full mb-8'>
+                    <div className='flex gap-12 w-full mb-9'>
                         <p>用餐日期</p>
                         {dayOfWeek}
                     </div>

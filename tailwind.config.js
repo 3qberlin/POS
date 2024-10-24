@@ -64,6 +64,7 @@ export const theme = {
       '2': '2px',
       '4': '4px',
       '8': '8px',
+      '9': '9px',
       '12': '12px',
       '16': '16px',
       '20': '20px',
@@ -77,8 +78,17 @@ export const theme = {
       '72': '72px',
       '80': '80px',
       '100': '100px',
+      '120': '120px',
+      '132': '132px',
       '140': '140px',
+      '164': '164px',
+      '180': '180px',
+      '220': '220px',
+      '240': '240px',
       '280': '280px',
+      '320': '320px',
+      '440': '440px',
+      '500': '500px',
       'n': '-1000px'
     },
     borderRadius: {
@@ -132,6 +142,10 @@ export const theme = {
     '24': '24px',
     '32': '32px',
     '40': '40px',
+  },
+  backgroundImage: {
+    'desktop': "url('/background/desktop.png')",
+    'mobile': "url('/background/mobile.png')",
   }
 };
 export const plugins = [];

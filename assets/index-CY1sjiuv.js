@@ -3032,6 +3032,7 @@ https://sweetalert2.github.io/#ajax-request`),kO(w),typeof w.title=="string"&&(w
                         <p>日期：${i.selectedDate}</p>
                         <p>時間：${i.timeSelected}</p>
                         <p>人數：${i.diningPeople}</p>
+                        <p class="pt-8">訂單狀態：<span style="color: ${i.orderStatus==="active"?"green":"red"}">${i.orderStatus==="active"?"有效":"已取消"}</span></p>
                     `,icon:"info"})}})},n=()=>{Pe.fire({title:"取消訂位",confirmButtonText:"送出",showCancelButton:!0,cancelButtonText:"取消",reverseButtons:!0,buttonsStyling:!0,input:"text",inputPlaceholder:"請輸入訂單號碼",showLoaderOnConfirm:!0,inputAttributes:{autocapitalize:"off"},preConfirm:async r=>{if(!r){Pe.showValidationMessage("請輸入訂單號碼");return}try{const i=Zt(en,`orderNumbers/${r}`),o=await Cs(i);if(!o.exists()){Pe.showValidationMessage("查無此訂單號碼");return}const s=o.val();if(s.orderStatus!=="active"){Pe.showValidationMessage("該訂單已被取消或無效");return}return s}catch(i){Pe.showValidationMessage(`查詢訂單失敗：${i.message}`)}}}).then(r=>{if(r.isConfirmed&&r.value){const i=r.value;Pe.fire({title:"訂單資訊",html:`
                         <p>餐廳：${i.restaurantName}</p>
                         ${i.optionSelected?`<p>場館：${i.optionSelected}</p>`:""}
